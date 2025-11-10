@@ -1,0 +1,21 @@
+.containar{
+     margin-left: 10%;
+     margin-right: 10%;
+}
+
+.mainSection {
+     display: flex;
+flex-direction: row;
+
+}
+hr {
+     border:  1px solid #cccccc30;
+     margin-bottom: 5%;
+}
+@media (max-width:600px) {
+     .mainSection {
+          flex-direction: column;
+     }
+
+
+}

@@ -1,0 +1,43 @@
+.category-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 41px;
+    margin-top: 50px;
+}
+
+.category .box {
+    box-shadow: 0 0 5px #ccc;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.category .box:hover {
+    color: white;
+    background-color: red;
+    transform: translateY(-5px);
+}
+
+.category .box svg {
+    margin-bottom: 15px;
+}
+
+.category .box p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.category { 
+    margin-bottom: 5%;
+    margin-top: 5%;
+}

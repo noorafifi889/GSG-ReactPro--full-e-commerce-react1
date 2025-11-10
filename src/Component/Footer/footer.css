@@ -1,0 +1,232 @@
+.footer-container {
+    margin-top: 10%;
+    background-color: black;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.footer-section h1 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-section h2 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-section p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Subscribe Section */
+.subscribe h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.email-input {
+    display: flex;
+    margin-top: 15px;
+    max-width: 300px;
+}
+
+.email-input input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+}
+
+.email-input input::placeholder {
+    color: #999;
+}
+
+.email-input button {
+    padding: 12px 7px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.email-input button:hover {
+    background-color: #0056b3;
+}
+
+
+.account-table {
+    display: flex;
+    gap: 40px;
+}
+
+.account-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-column a {
+    color: gray;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.account-column a:hover {
+    color: #007bff;
+}
+
+/* Download App Section - المحسّن */
+.download-app p {
+    margin-bottom: 15px;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.app-buttons img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.app-buttons > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.app-button {
+    padding: 10px 15px;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-button:hover {
+    background-color: #444;
+    transform: translateY(-2px);
+}
+
+/* Copyright Section */
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #999;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 30px;
+    }
+    
+    .footer-section {
+        min-width: 100%;
+    }
+    
+    .account-table {
+        gap: 20px;
+    }
+    
+    .email-input {
+        max-width: 100%;
+    }
+    
+    .app-buttons {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .app-buttons > div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 30px 0 15px;
+    }
+    
+    .footer-content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .account-table {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .app-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .app-button {
+        min-width: 100%;
+    }
+    
+    .app-buttons img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+.app-buttons img {
+    border: 2px solid #444;
+    transition: border-color 0.3s ease;
+}
+
+.app-buttons img:hover {
+    border-color: #007bff;
+}

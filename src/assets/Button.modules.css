@@ -1,0 +1,24 @@
+ .btn-style    {
+    background-color:  rgb(233, 28, 28);
+    color: white;
+font-size: 13px;
+text-align: center;
+padding: 15px  50px;
+width: fit-content;
+text-decoration: none;
+display: flex;
+
+border: none;
+border-radius: 15px;
+align-items: center;
+justify-content: center;
+border-radius: 4px;
+text-decoration: none ;
+   
+
+ }
+ .btn-style button {
+    background-color: transparent ;
+    border: none ;
+    color: white;
+ }

@@ -1,0 +1,19 @@
+.flashSales {
+      margin-top: 5%;
+      margin-bottom: 5%;
+}
+.today {
+          border-left: 13px solid red;
+    padding: 10px;
+    font-weight: 600;
+    color: red;
+}
+
+.mainTitle{
+    margin-top: 20px;
+}
+.box {
+    display: flex;
+    justify-content: flex-start;
+    gap :30px
+}

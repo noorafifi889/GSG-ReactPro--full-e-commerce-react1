@@ -1,0 +1,14 @@
+.sub-title {
+          border-left: 13px solid red;
+    padding: 10px;
+    font-weight: 600;
+    color: red;
+}
+
+
+.section-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin-top: 10px;
+}

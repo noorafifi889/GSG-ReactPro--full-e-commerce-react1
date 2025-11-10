@@ -1,0 +1,264 @@
+/* MainContent.css */
+main {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', 'SF Pro Display', -apple-system, sans-serif;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 50px;
+  padding: 0 60px;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.textContent {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-right: 40px;
+}
+
+.logoContent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+
+.apple-logo {
+  display: flex;
+  align-items: center;
+}
+
+.apple-logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.logoContent p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.textContent h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 30px 0;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #fff 0%, #e8e8e8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.shop-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 2px solid #fff;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.shop-link:hover {
+  gap: 12px;
+  padding-right: 5px;
+}
+
+.arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.shop-link:hover .arrow {
+  transform: translateX(4px);
+}
+
+.imageContent {
+  flex: 0 0 55%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.iphone {
+width: 400px;
+  object-fit: contain;
+  object-position: center;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+  transform: scale(1.05);
+  margin-right: -20px;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: #fff;
+  transform: scale(1.2);
+}
+
+/* تأثيرات الخلفية المتقدمة */
+main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(
+      circle at 75% 30%,
+      rgba(50, 50, 50, 0.8) 0%,
+      rgba(0, 0, 0, 1) 60%
+    );
+  z-index: 1;
+}
+
+main::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  z-index: 1;
+}
+
+/* تحسينات للشاشات المتوسطة */
+@media (max-width: 1024px) {
+  main {
+    height: 450px;
+  }
+  
+  .content {
+    padding: 0 40px;
+  }
+  
+  .textContent h1 {
+    font-size: 48px;
+  }
+  
+  .iphone {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+/* تحسينات للشاشات الصغيرة */
+@media (max-width: 768px) {
+  main {
+    height: 400px;
+  }
+  
+  .content {
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+  }
+  
+  .textContent {
+    flex: 0 0 auto;
+    padding-right: 0;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  
+  .imageContent {
+    flex: 0 0 auto;
+    justify-content: center;
+  }
+  
+  .textContent h1 {
+    font-size: 36px;
+  }
+  
+  .iphone {
+    width: 350px;
+    height: 350px;
+    margin-right: 0;
+  }
+  
+  .slider-dots {
+    bottom: 20px;
+  }
+}
+
+/* تحسينات للشاشات الصغيرة جداً */
+@media (max-width: 480px) {
+  main {
+    height: 350px;
+  }
+  
+  .content {
+    padding: 0 20px;
+  }
+  
+  .textContent h1 {
+    font-size: 28px;
+  }
+  
+  .iphone {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .logoContent p {
+    font-size: 14px;
+  }
+  
+  .shop-link {
+    font-size: 14px;
+  }
+}

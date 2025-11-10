@@ -1,0 +1,107 @@
+.timer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  position: relative;
+    margin-top: -80px;
+    margin-left: -200px;
+
+}
+
+.timer-labels {
+  display: flex;
+  gap: 10PX;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+@media (max-width:750px){
+  .timer-section {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
+.timer-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+  min-width: 60px;
+}
+
+.timer-values {
+  display: flex;
+  align-items: center;
+}
+
+.time-unit {
+  color:black;
+    padding: 0px 12px;
+  border-radius: 6px;
+  min-width: 50px;
+  text-align: center;
+}
+
+.time-number {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+}
+
+.time-separator {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timer-labels {
+    gap: 30px;
+  }
+  
+  .timer-label {
+    font-size: 12px;
+    min-width: 50px;
+  }
+  
+  .time-unit {
+    min-width: 50px;
+    padding: 10px 12px;
+  }
+  
+  .time-number {
+    font-size: 20px;
+  }
+  
+  .time-separator {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer-labels {
+    gap: 20px;
+  }
+  
+  .timer-label {
+    font-size: 11px;
+    min-width: 45px;
+  }
+  
+  .time-unit {
+    min-width: 45px;
+    padding: 8px 10px;
+  }
+  
+  .time-number {
+    font-size: 18px;
+  }
+  
+  .time-separator {
+    font-size: 18px;
+  }
+}

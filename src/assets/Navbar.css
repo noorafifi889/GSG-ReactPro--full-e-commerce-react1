@@ -1,0 +1,120 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    flex-wrap: wrap;
+    
+box-shadow: 0 0 5px  #ccc;
+padding: 15px 10px;
+}
+nav .logo {
+    font-weight: bold;
+    font-size: 20px;
+
+}
+nav .item  {
+    display:flex ;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 14px;
+
+
+}
+nav ul {
+    display: flex ;
+
+}
+nav  li {
+    list-style: none;
+padding: 5px;
+    margin-left: 20px;
+}
+nav .item  li:hover {
+text-decoration: underline;
+
+}
+nav  a {
+  color:black;
+  font-weight: 500;
+  text-decoration: none; 
+}
+nav .active {
+  text-decoration: underline;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.controlSection {
+       display: flex ;
+    gap: 5px;
+    flex-direction: row;
+    justify-content: space-around;
+        align-items: center;
+    
+}
+.controlSection input {
+    padding: 10px 5px;
+    background-color:#e9e6e6 ;
+ border:  none;
+ outline: none;
+    
+}
+input::placeholder {
+    color: gray;
+}
+.icon {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: red;
+}
+.lookInput {
+  position: relative;
+  display: flex;
+  align-items: center;
+    background-color:#e9e6e6 ;
+      border-radius: 10px;
+  padding: 0 15px;
+  transition: border-color 0.3s ease;
+}
+
+.lookInput:focus-within {
+  border-color: #007bff;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .item ul {
+    gap: 20px;
+  }
+  
+  .lookInput input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .item ul {
+    gap: 15px;
+  }
+  
+  .lookInput input {
+    width: 180px;
+  }
+}

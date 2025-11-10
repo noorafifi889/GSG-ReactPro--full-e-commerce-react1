@@ -1,0 +1,39 @@
+.navigation-arrows {
+  display: flex;
+  gap: 12px;
+}
+
+.navigation-arrows {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-arrow {
+     border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 19px;
+    border-radius: 50%;
+
+}
+
+.nav-arrow:hover:not(:disabled) {
+  background: #f5f5f5;
+}
+
+.nav-arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.nav-arrow span {
+  margin-left: 4px;
+}
+
+
+.nav-arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
