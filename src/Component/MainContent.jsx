@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/MainContant.css";
-import appleLogo from "../Image/download.png";
+import appleLogo from "../image/download.png";
 import iphon14 from "../Image/iphone14.png";
 
 const MainContent = () => {
