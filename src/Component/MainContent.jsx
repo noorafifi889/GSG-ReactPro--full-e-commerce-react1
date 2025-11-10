@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/MainContant.css";
 import appleLogo from "../image/download.png";
-import iphon14 from "../Image/iphone14.png";
+import iphon14 from "../image/iphone14.png";
 
 const MainContent = () => {
   return (
@@ -11,7 +11,7 @@ const MainContent = () => {
           <div className="logoContent">
             <div className="apple-logo">
               <img src={appleLogo} alt="Apple Logo" />
-            </div>
+            </div> 
             <p>iPhone 14 Series</p>
           </div>
           <h1>
@@ -39,3 +39,4 @@ const MainContent = () => {
 };
 
 export default MainContent;
+
