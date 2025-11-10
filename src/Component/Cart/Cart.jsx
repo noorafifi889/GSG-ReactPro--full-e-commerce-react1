@@ -1,7 +1,7 @@
 import React from "react";
 import { useCart } from "./contexts/useCart";
 import { FaTrash, FaPlus, FaMinus } from "react-icons/fa";
-import "./Cart.css";
+import "./cart.css";
 import { Link } from "react-router-dom";
 const Cart = () => {
   const {
