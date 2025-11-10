@@ -17,7 +17,7 @@ const BestProducts = () => {
       />
       <div className="products-grid">
         {products.slice(10, 14).map((product) => (
-          <ProductCard product={product} />
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
     </div> //
